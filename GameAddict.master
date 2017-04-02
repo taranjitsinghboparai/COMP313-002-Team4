@@ -1,0 +1,296 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="GameAddict.master.cs" Inherits="GameAddict"  ClientIDMode="Static"  %>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>GameAddict</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+        <!--[if IE 6]><link rel="stylesheet" href="css/ie6-style.css" type="text/css" media="all" /><![endif]-->
+        <script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+        <script src="js/fns.js" type="text/javascript"></script>
+        <style>
+     
+            #top-nav .first{
+                background: url(CSS/images/nav-active-first.gif) no-repeat;
+                background-size: 10% 100%;
+            }
+
+            #footer .copy, #footer .copy a{
+                color: #656565;
+                font-size: 12px;
+                text-decoration: none;
+                margin-top: 10px;
+            }
+
+        </style>
+        <script>
+            $(document).ready(function () {
+                var e = '<%=Session["platform"] %>';
+                
+                if (e == "") {
+                    $('.all').addClass("home");
+                } else {
+                    $('.all').removeClass("home");
+                    $("." + e).addClass("home");
+                }
+
+
+                $('.ds').addClass(" last");
+
+            });
+
+
+        </script>
+    <asp:ContentPlaceHolder id="GameAddictHead" runat="server">
+
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+
+    <!-- Page -->
+<div id="page" class="shell">
+  <!-- Header -->
+  <div id="header">
+    <!-- Top Navigation -->
+
+      <asp:SqlDataSource ID="platforms" runat="server" ConnectionString='<%$ ConnectionStrings:GameAddictConnectionString %>' SelectCommand="SELECT * FROM [Platform] WHERE ([IsActive] = @IsActive)">
+          <SelectParameters>
+              <asp:Parameter DefaultValue="1" Name="IsActive" Type="Byte"></asp:Parameter>
+          </SelectParameters>
+      </asp:SqlDataSource>
+
+    <div id="top-nav">
+      <ul>
+        <li class="all first home"><a href="Redirector.aspx?pid=ALL">All</a></li>
+
+          <asp:Repeater ID="p_repeater" runat="server" DataSourceID="platforms">
+              <ItemTemplate>        
+                  <li class='<%# Eval("Name").ToString().ToLower() %>'><a href='Redirector.aspx?pid=<%# Eval("Name")%>'> <%# Eval("Name") %></a></li>
+              </ItemTemplate>
+          </asp:Repeater>
+      </ul>
+    </div>
+    <!-- / Top Navigation -->
+    <div class="cl">&nbsp;</div>
+    <!-- Logo -->
+    <div id="logo">
+      <h1><a href="Home.aspx">Game<span>Addict</span></a></h1>
+      <p class="description">Buy Games & Consoles</p>
+    </div>
+    <!-- / Logo -->
+    <!-- Main Navigation -->
+    <div id="main-nav">
+      <div class="bg-right">
+        <div class="bg-left">
+          <ul>
+            <li><a href="Cart.aspx">Cart</a></li>
+            <li><a href="Orders.aspx">Orders</a></li>
+            <li><a href="Wishlist.aspx">WishList</a></li>
+            <li><a href="Reviews.aspx">Reviews</a></li>
+            <li><a href="UserProfile.aspx">Account</a></li>
+            <li runat="server" ID="signin"><a href="Login.aspx">Sign In</a></li>
+            <li runat="server" ID="register"><a href="Register.aspx">Register</a></li>
+            <li runat="server" ID="Logout"><a href="Logout.aspx">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- / Main Navigation -->
+    <div class="cl">&nbsp;</div>
+    <!-- Sort Navigation -->
+    <div id="sort-nav">
+      <div class="bg-right">
+        <div class="bg-left">
+          <div class="cl">&nbsp;</div>
+          <ul class="nav-ul" runat="server" onclick="changeTab">
+            <li id="home"><a href="Home.aspx">Home</a><span class="sep">&nbsp;</span></li>
+            <li id="upcomming"><a href="Upcomming.aspx">Upcomming </a><span class="sep">&nbsp;</span></li>
+            <li id="newgames"><a href="NewGames.aspx">New Releases</a><span class="sep">&nbsp;</span></li>
+            <li id="topgames"><a href="TopGames.aspx">Top Games</a><span class="sep">&nbsp;</span></li>
+            <li id="allgames"><a href="AllGames.aspx">All Games</a><span class="sep">&nbsp;</span></li>
+            <li id="genre"><a href="Genre.aspx">Genre</a><span class="sep">&nbsp;</span></li>
+          </ul>
+          <div class="cl">&nbsp;</div>
+        </div>
+      </div>
+    </div>
+    <!-- / Sort Navigation -->
+  </div>
+  <!-- / Header -->
+    
+     <div id="main">
+    <div id="main-bot">
+      <div class="cl">&nbsp;</div>
+        <form runat="server"  id="form1">
+            <asp:ContentPlaceHolder ID="GameAddictBody" runat="server">
+            </asp:ContentPlaceHolder>
+            <div id="sidebar">
+
+                <!-- Search -->
+                <div id="search" class="block">
+                    <div class="block-bot">
+                        <div class="block-cnt">
+                            <div class="cl">&nbsp;</div>
+                            <div class="fieldplace">
+                                <asp:TextBox ID="tbx_search" CssClass="field" runat="server"></asp:TextBox>
+                            </div>
+                            <asp:Button ID="btn_search" OnClick="btn_search_Click" CausesValidation="false" CssClass="button" runat="server" Text="Button" />
+                            <div class="cl">&nbsp;</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- / Search -->
+
+                <!-- Sign In -->
+                <div id="sign" class="block">
+                    <div class="block-bot">
+                        <div class="block-cnt" runat="server" id="login">
+                            <div class="cl">&nbsp;</div>
+
+                            <a href="Login.aspx" class="button button-left">sign in</a> <a href="Register.aspx" class="button button-right">Register</a>
+                            <div class="cl">&nbsp;</div>
+                            <p class="center"><a href="#">Help?</a>&nbsp;&nbsp;<a href="#">Forgot Password?</a></p>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- / Sign In -->
+
+                <div class="block">
+                    <div class="block-bot">
+                        <div class="head">
+                            <div class="head-cnt">
+                                <h3>Top Games</h3>
+                            </div>
+                        </div>
+                        <div class="image-articles articles">
+                            <div class="cl">&nbsp;</div>
+                            <div class="article">
+                                <div class="cl">&nbsp;</div>
+                                <div class="image"><a href="#">
+                                    <img src="css/images/img1.gif" alt="" /></a> </div>
+                                <div class="cnt">
+                                    <h4><a href="#">TMNT</a></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum molestie </p>
+                                </div>
+                                <div class="cl">&nbsp;</div>
+                            </div>
+                            <div class="article">
+                                <div class="cl">&nbsp;</div>
+                                <div class="image"><a href="#">
+                                    <img src="css/images/img2.gif" alt="" /></a> </div>
+                                <div class="cnt">
+                                    <h4><a href="#">F.E.A.R.2</a></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum molestie </p>
+                                </div>
+                                <div class="cl">&nbsp;</div>
+                            </div>
+                            <div class="article">
+                                <div class="cl">&nbsp;</div>
+                                <div class="image"><a href="#">
+                                    <img src="css/images/img3.gif" alt="" /></a> </div>
+                                <div class="cnt">
+                                    <h4><a href="#">Steel Fury</a></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum molestie </p>
+                                </div>
+                                <div class="cl">&nbsp;</div>
+                            </div>
+                            <div class="cl">&nbsp;</div>
+                            <a href="#" class="view-all">view all</a>
+                            <div class="cl">&nbsp;</div>
+                        </div>
+                    </div>
+                </div>
+                <!--  Block 1 -->
+                <div class="block">
+                    <div class="block-bot">
+                        <div class="head">
+                            <div class="head-cnt">
+                                <h3>New Releases</h3>
+                            </div>
+                        </div>
+                        <div class="image-articles articles">
+                            <div class="cl">&nbsp;</div>
+                            <div class="article">
+                                <div class="cl">&nbsp;</div>
+                                <div class="image"><a href="#">
+                                    <img src="css/images/img1.gif" alt="" /></a> </div>
+                                <div class="cnt">
+                                    <h4><a href="#">FALLOUT3</a></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum molestie </p>
+                                </div>
+                                <div class="cl">&nbsp;</div>
+                            </div>
+                            <div class="article">
+                                <div class="cl">&nbsp;</div>
+                                <div class="image"><a href="#">
+                                    <img src="css/images/img2.gif" alt="" /></a> </div>
+                                <div class="cnt">
+                                    <h4><a href="#">Crysis</a></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum molestie </p>
+                                </div>
+                                <div class="cl">&nbsp;</div>
+                            </div>
+                            <div class="article">
+                                <div class="cl">&nbsp;</div>
+                                <div class="image"><a href="#">
+                                    <img src="css/images/img3.gif" alt="" /></a> </div>
+                                <div class="cnt">
+                                    <h4><a href="#">F.E.A.R.2</a></h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elementum molestie </p>
+                                </div>
+                                <div class="cl">&nbsp;</div>
+                            </div>
+                            <div class="cl">&nbsp;</div>
+                            <a href="#" class="view-all">view all</a>
+                            <div class="cl">&nbsp;</div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </form>
+        
+     <div id="footer">
+      <div class="navs">
+        <div class="navs-bot">
+          <div class="cl">&nbsp;</div>
+          <ul>
+            <li><a href="Home.aspx">Home</a></li>
+            <li><a href="#">Upcomming</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Top Charts</a></li>
+            <li><a href="All-Games.aspx">All Games</a></li>
+            <li><a href="#">Downloads</a></li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="#">Account</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">pc</a></li>
+            <li><a href="#">xbox</a></li>
+            <li><a href="#">360</a></li>
+            <li><a href="#">ps4</a></li>
+            <li><a href="#">ps3</a></li>
+            <li><a href="#">ps2</a></li>
+            <li><a href="#">psp</a></li>
+            <li><a href="#">ds</a></li>
+          </ul>
+          <div class="cl">&nbsp;</div>
+        </div>
+      </div>
+      <p class="copy">&copy; 2016-2017 GameAddict.com. ALL Rights Reserved by <a href="http://mrpatel.net" target="_blank">Fancy Games</a></p>
+    </div>
+    <!-- / Footer -->
+
+      </div>
+    </div>
+    <!-- / Main -->
+
+    </div>
+    <!-- / Page -->
+</body>
+</html>

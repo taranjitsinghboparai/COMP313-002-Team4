@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMaster.master.cs" Inherits="AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>GameAddict:AdminPanel</title>
+            <style>
+            body{
+                background-color: #171717;
+                color: #a9a9a9;
+            }
+        </style>
+
+    <asp:ContentPlaceHolder id="AdminPanelHead" runat="server">
+
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="adminForms" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="AdminPanelBody" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
