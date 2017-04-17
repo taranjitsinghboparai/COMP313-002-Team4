@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="3dp"
+        android:layout_y="223dp"
+        android:text="Password:"
+        android:textColor="#565555"
+        android:textSize="25sp"
+        android:textStyle="normal|bold|italic" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="2dp"
+        android:layout_y="161dp"
+        android:text="Username:"
+        android:textColor="#565555"
+        android:textSize="25sp"
+        android:textStyle="normal|bold|italic" />
+
+    <EditText
+        android:id="@+id/editUsernameLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="130dp"
+        android:layout_y="154dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editPasswordLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="130dp"
+        android:layout_y="214dp"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="2dp"
+        android:layout_y="22dp"
+        app:srcCompat="@drawable/headerlogin" />
+
+    <ImageButton
+        android:id="@+id/btnLogin1"
+        android:layout_width="204dp"
+        android:layout_height="55dp"
+        android:layout_x="84dp"
+        android:layout_y="328dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/btnlogin" />
+
+    <ImageButton
+        android:id="@+id/btnClear1"
+        android:layout_width="204dp"
+        android:layout_height="55dp"
+        android:layout_x="85dp"
+        android:layout_y="393dp"
+        android:onClick="Clear"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/btnclear" />
+
+
+</AbsoluteLayout>

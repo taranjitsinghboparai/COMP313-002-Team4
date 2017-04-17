@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F5F5F5">
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:stretchColumns="#F5F5F5">
+
+            <TableRow>
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/headerlogo"></ImageView>
+            </TableRow>
+
+            <TableRow>
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:src="@drawable/logo" />
+            </TableRow>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="80dp">
+                <ImageButton
+                    android:id="@+id/buttonLogin"
+                    android:layout_width="204dp"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="5dp"
+                    android:onClick="Login"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/btnlogin" />
+
+                <ImageButton
+                    android:id="@+id/buttonRegister"
+                    android:layout_width="204dp"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="5dp"
+                    android:onClick="Register"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/btnregister" />
+
+                <ImageButton
+                    android:id="@+id/btnGuest"
+                    android:layout_width="204dp"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="5dp"
+                    android:onClick="Guest"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/btnguest" />
+            </LinearLayout>
+
+        </TableLayout>
+
+</ScrollView>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+<AbsoluteLayout
+    android:id="@+id/activity_third_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:elevation="1dp">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="-2dp"
+        android:layout_y="3dp"
+        android:src="@drawable/headerdetails" />
+
+    <EditText
+        android:id="@+id/editID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="130dp"
+        android:layout_y="147dp"
+        android:ems="10"
+        android:inputType="text|number" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="2dp"
+        android:layout_y="154dp"
+        android:text="Order ID:"
+        android:textColor="#565555"
+        android:textSize="25sp"
+        android:textStyle="normal|bold|italic" />
+
+    <ImageButton
+        android:id="@+id/btnView"
+        android:layout_width="162dp"
+        android:layout_height="50dp"
+        android:layout_x="15dp"
+        android:layout_y="240dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/buttonview" />
+
+    <ImageButton
+        android:id="@+id/btnDelete"
+        android:layout_width="162dp"
+        android:layout_height="50dp"
+        android:layout_x="15dp"
+        android:layout_y="320dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/buttondelete" />
+
+    <ImageButton
+        android:id="@+id/btnViewAll"
+        android:layout_width="162dp"
+        android:layout_height="50dp"
+        android:layout_x="184dp"
+        android:layout_y="240dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/buttonviewall" />
+
+    <ImageButton
+        android:id="@+id/btnLogout"
+        android:layout_width="162dp"
+        android:layout_height="50dp"
+        android:layout_x="185dp"
+        android:layout_y="319dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/buttonlogout" />
+
+</AbsoluteLayout>
+</ScrollView>

@@ -1,0 +1,44 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+
+    <ImageSwitcher
+        android:id="@+id/simpleImageSwitcher"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp" />
+
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#050"
+        android:text="NEXT"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="                                   GAME DESCRIPTION"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Fallout 4 is an action role-playing video game developed by Bethesda Game Studios and published by Bethesda Softworks for Microsoft Windows, PlayStation 4, and Xbox One. Released worldwide on November 10, 2015, it is the fifth major installment in the Fallout series. The game is set within an open world post-apocalyptic environment that encompasses the city of Boston and the surrounding Massachusetts region known as The Commonwealth. The main story takes place in the year 2287, ten years after the events of Fallout 3 and 210 years after The Great War that caused catastrophic nuclear devastation across the United States."/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="The player assumes control of a character referred to as the Sole Survivor who emerges from a long-term cryogenic stasis in Vault 111, an underground nuclear fallout shelter, after witnessing the murder of their spouse and kidnapping of their only child, and ventures out into the Commonwealth to search for their missing child. The player will subsequently explore the game's dilapidated world, completing various quests, helping out factions, and acquiring experience points to level up and increase the abilities of their character. It is the first game in the series to feature full voice acting for the protagonist."/>
+</LinearLayout>
+</ScrollView>

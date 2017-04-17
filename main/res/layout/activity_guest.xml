@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#F5F5F5">
+
+        <ImageView
+            android:id="@+id/imagehead"
+            android:layout_width="wrap_content"
+            android:layout_height="94dp"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/headergames" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="151dp"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/game1"
+            />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Name: "
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="Fallout 3"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Genre:"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="Action"
+                    android:textSize="18sp" />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Platform: "
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="PC"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Price:"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="$90"
+                    android:textSize="18sp" />
+            </TableRow>
+        </TableLayout>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="151dp"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/game2"
+            />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Name: "
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="Fifa 16"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Genre:"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="Sports"
+                    android:textSize="18sp" />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Platform: "
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="PS4"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Price:"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="$45"
+                    android:textSize="18sp" />
+            </TableRow>
+
+        </TableLayout>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="151dp"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/game3"
+            />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Name: "
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="WWE 2K16"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Genre:"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="Action|Sports"
+                    android:textSize="18sp" />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Platform: "
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="PS4"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Price:"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="$35"
+                    android:textSize="18sp" />
+            </TableRow>
+
+        </TableLayout>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="151dp"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/game4"
+            />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Name: "
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="NHL 16"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Genre:"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="Sports"
+                    android:textSize="18sp" />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Platform: "
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="xBox"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Price:"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="$50"
+                    android:textSize="18sp" />
+            </TableRow>
+
+        </TableLayout>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="151dp"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/game5"
+            />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Name: "
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="NBA 2K16"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Genre:"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="Sports"
+                    android:textSize="18sp" />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Platform: "
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="PS4"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Price:"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="$65"
+                    android:textSize="18sp" />
+            </TableRow>
+
+        </TableLayout>
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="151dp"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/game6"
+            />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Name: "
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="Call of Duty: Black Ops"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Genre:"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="Action|War|Shooting"
+                    android:textSize="18sp" />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Platform: "
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="PS4"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Price:"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="$75"
+                    android:textSize="18sp" />
+            </TableRow>
+
+        </TableLayout>
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="151dp"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/game7"
+            />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Name: "
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="PES 2017"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Genre:"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="Sports"
+                    android:textSize="18sp" />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Platform: "
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="PS3"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Price:"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="$50"
+                    android:textSize="18sp" />
+            </TableRow>
+
+        </TableLayout>
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="151dp"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/game8"
+            />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Name: "
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="NFS: Rivals"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Genre:"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="Racing|Action"
+                    android:textSize="18sp" />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Platform: "
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="PS3"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Price:"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="$45"
+                    android:textSize="18sp" />
+            </TableRow>
+
+        </TableLayout>
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="151dp"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/game9"
+            />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Name: "
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="Mortal Kombat X"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Genre:"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="Action|Fighting|Arcade"
+                    android:textSize="18sp" />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Platform: "
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="PC"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Price:"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="$35"
+                    android:textSize="18sp" />
+            </TableRow>
+
+        </TableLayout>
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="wrap_content"
+            android:layout_height="151dp"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/game10"
+            />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Name: "
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="Dragon Age 3"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Genre:"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="Action|Arcade"
+                    android:textSize="18sp" />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Platform: "
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="PS3"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Price:"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="$40"
+                    android:textSize="18sp" />
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>
